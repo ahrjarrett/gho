@@ -104,6 +104,9 @@ h4 a, h5 a, h6 a {
   padding: 50px 60px;
   overflow: hidden; }
 
+.fc-logo img {
+  height: 30px; }
+
 .blog-header {
   position: relative;
   display: table;

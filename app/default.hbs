@@ -12,16 +12,19 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" type="image/x-icon" href="https://ghost.org/assets/favicon-e13fe17b11ad125601924cfb260f20da.ico">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="https://googledrive.com/host/0BzwOBEBWIA-qWTQ3N0J6T0U1aFU/">
 
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:700,400,200" />
-    <link href="https://ghost.org/assets/application-79fdfd728b2d80ce5e6f7440b7176cc4.css" media="all" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="{{asset "css/application.css"}}" media="all" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
 
-    <meta property="twitter:site" content="@TryGhost">
-    <meta property="twitter:domain" content="Ghost.org" />
-    <meta property="og:site_name" content="Ghost" />
+    <meta property="twitter:site" content="@tweetClosely">
+    <meta property="twitter:domain" content="followclosely.com" />
+    <meta property="og:site_name" content="FollowClosely" />
     <meta property="fb:admins" content="511697361" />
 
     {{ghost_head}}
@@ -34,17 +37,17 @@
     <header id="global-header" class="global-header navbar">
        <nav role="navigation">
            <div class="wrapper">
-               <a class="ghost-logo" href="https://ghost.org/"><span>Ghost</span></a>
+               <a class="fc-logo" href="https://followclosely.com"><span>FollowClosely</span></a>
                <button type="button" class="mobile-menu" data-toggle="closed" data-target=".nav-collapse">
                <span class="hidden">Menu</span>
                </button>
                <ul id="main-menu" class="nav-collapse closed">
-                   <li><a href="//ghost.org/about/">About</a></li>
-                   <li><a href="http://marketplace.ghost.org">Marketplace</a></li>
-                   <li><a href="http://support.ghost.org/">Support</a></li>
-                   <li class="current extra"><a href="//blog.ghost.org">Blog</a></li>
-                   <li><a class="signup" href="//ghost.org/signup/">Sign Up</a></li>
-                   <li><a class="login" href="//ghost.org/login/">Log in</a></li>
+                   <li><a href="//followclosely.com/">Home</a></li>
+                   <li><a href="//followclosely.com/product">Product</a></li>
+                   <li><a href="//followclosely.com/pricing">Pricing</a></li>
+                   <li class="current extra"><a href="//followclosely.com/blog">Blog</a></li>
+                   <li><a class="signup" href="//followclosely.com/demo">Get Demo</a></li>
+                   <li><a class="login" href="//followclosely.com/sign-up">Sign Up</a></li>
                </ul>
            </div>
         </nav>
@@ -65,10 +68,7 @@
                     <a class="modal-close" data-dismiss="modal" aria-hidden="true" href="#"><span class="hidden">Close</span></a>
                 </header>
                 <div class="modal-body">
-                    <form action="http://followclosely1.createsend.com/t/i/s/hyukkd/" method="POST">
-                    <!--input type="hidden" name="u" value="e6c2ca46a2ee1caf864c7eac7">
-                    <input type="hidden" name="id" value="9eb3213687">
-                    -->    
+                    <form action="http://followclosely1.createsend.com/t/i/s/hyukkd/" method="POST">  
                         <input id="fieldEmail" name="cm-hyukkd-hyukkd" type="email" placeholder="Your email address" required />
                         <button class="button-add wide" type="submit">Send me the good stuff</button>
                         <p><strong>Privacy policy:</strong> No spam. No jibber jabber. Unsubscribe any time.</p>
@@ -83,25 +83,25 @@
     <footer id="global-footer">
         <nav id="footer-nav" role="navigation">
             <ul id="footer-menu">
-                <li class="logo"><a href="/"><img alt="Ghost" src="https://ghost.org/assets/logo-minighost-0f5476cf6a52adff2f2a67e4f16d3e29.png"></a></li>
-                <li><a class="" href="//ghost.org/about/">About</a></li>
-                <li><a href="http://status.ghost.org">Status</a></li>
-                <li><a class="" href="//ghost.org/pricing/">Pricing</a></li>
-                <li><a href="http://blog.ghost.org">Blog</a></li>
-                <li><a class="" href="//ghost.org/about/terms/">Terms</a></li>
-                <li><a class="" href="//ghost.org/about/privacy/">Privacy</a></li>
-                <li><a class="" href="//ghost.org/about/contact/">Contact</a></li>
+                <!--<li class="fc-logo"><a href="/"><img alt="FollowClosely" src="https://c2.staticflickr.com/2/1542/24568013169_2658b6dcce_c.jpg"></a></li>-->
+                <li><a class="" href="//followclosely.com/about">About</a></li>
+                <li><a href="//followclosely.com/help">Support</a></li>
+                <li><a class="" href="//followclosely.com/demo">Demo</a></li>
+                <li><a href="//followclosely.com/terms">Terms</a></li>
+
+                <li><a href="https://twitter.com/intent/tweet?text=%40TweetClosely+Hi%21+Can+you+help+me+with+&amp;related=FollowClosely" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">Tweet at Us</a></li>
+
+                <li><a class="" href="https://www.join.me/">Join Live Demo</a></li>
             </ul>
             <div class="clearfix"></div>
-
-            <span class="poweredby"><img alt="Ghost" src="https://ghost.org/assets/logo-minidigitalocean-1bb39c0755ac79befc56ca39d7889eb5.png"> Powered <em>by</em> <a href="https://digitalocean.com" target="_blank">DigitalOcean</a></span>
-
+<!--
             <ul id="social-menu">
-                <li class="github"><a href="https://github.com/tryghost/Ghost"><span class="hidden">Github</span></a></li>
+                <li class="github"><a href="https://github.com/ahrjarrett"><span class="hidden">Github</span></a></li>
                 <li class="twitter"><a href="https://twitter.com/tryghost"><span class="hidden">Twitter</span></a></li>
                 <li class="gplus"><a href="https://plus.google.com/u/0/b/114465948129362706086/114465948129362706086/posts"><span class="hidden">Google+</span></a></li>
                 <li class="facebook"><a href="https://www.facebook.com/ghost"><span class="hidden">Facebook</span></a></li>
             </ul>
+-->
 
         </nav>
         <div class="clearfix"></div>
@@ -110,7 +110,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     {{ghost_foot}}
 
-    <script src="https://ghost.org/navigation/"></script>
+    <script type="text/javascript" src="{{asset "js/fc.js"}}"></script>
 
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>

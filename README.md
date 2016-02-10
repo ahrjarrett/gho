@@ -1,5 +1,5 @@
 > sass app/assets/sass/screen.scss:app/assets/css/screen.css
-(above command compiles sass)
+(compiles sass)
 
 >here ghost is setup as an npm dependency for local development with a gulp configuration to manage tasks
 
