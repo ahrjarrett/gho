@@ -1,18 +1,29 @@
 {{!< default}}
+{{#tag}}
+  {{#if image}}
+    <header class="tag-header" style="background-image: url({{image}})">
+  {{else}}
 
-<header class="blog-header">
-    <div class="vertical">
-        <h1>Posts on {{tag.name}}</h1>
-    </div>
-</header>
+      <!--
+      <div class="vertical">
+          <h1>{{name}}</h1>  
+      </div>
+      -->
+        {{/if}}
+  </header>
+  
+{{/tag}}
+
 
 <div class="wrap">
-    <section class="blog-content">
+    <section class="tag-content">
 
         {{#foreach posts}}
 
         <article class="{{post_class}}">
             <header class="post-header">
+
+
                 <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
                 <section class="post-meta">
                     <img class="author-img" src="{{author.image}}" alt="Author image" nopin="nopin" />
@@ -23,7 +34,7 @@
                 </section>
             </header>
             <section class="post-excerpt">
-                <p>{{excerpt words="55"}}&hellip;</p>
+                <p>{{excerpt words="75"}}&hellip;</p>
             </section>
             <footer class="more-links">
                 <a class="read-more button-save" href="{{url}}">Read More</a>
@@ -40,6 +51,7 @@
 
     </section>
 
-    {{> sidebar}}
+    {{> sidebar-tag}}
+
 
 </div>

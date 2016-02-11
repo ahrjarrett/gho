@@ -17,9 +17,10 @@
     5.  Single Post
     6.  Third Party Elements
     7.  Pagination
-    8.  Footer
-    9.  Media Queries (Tablet)
-    10. Media Queries (Mobile)
+    8.  Tags
+    9.  Footer
+    10.  Media Queries (Tablet)
+    11. Media Queries (Mobile)
 
  */
 
@@ -152,7 +153,7 @@ h4 a, h5 a, h6 a {
     display: table-cell;
     vertical-align: middle;
     position: relative;
-    top: -2%;
+    top: 3%;
 }
 
 /* ==========================================================================
@@ -820,6 +821,206 @@ h4 a, h5 a, h6 a {
     }
 }
 
+
+/* ==========================================================================
+   8. TAGS - Using tags as discrete views (style individual tags by creating file called tag-product.hbs, for example)
+   ========================================================================== */
+
+/* Start with the grid, try putting it on the left this time (docs format) */
+
+.tag-content {
+  width: 63.26531%;
+  float: right;
+  font-size: 16px;
+}
+.tag-sidebar {
+    width: 30.61224%;
+    float: left;
+
+    h1,h2,h3,
+    h4,h5,h6 {
+        margin-top: 0;
+    }
+
+    p {
+        font-size: 17px;
+        font-weight: 200;
+        line-height: 1.3em;
+        margin: 0 0 15px 0;
+    }
+}
+.tagsidebar-text {
+    font-size: 14px;
+    color: #242628;
+    border: #9ebc51 1px solid;
+    background: lighten($lightbrown, 4%);
+  
+  ul {
+        margin: 0;
+        padding: 0 0 0 1.2em;
+    }
+}
+.tagsidebar-text a {
+  width: 100%;
+  color: #242628;
+}
+
+.tagsidebar-text a:hover {
+  text-decoration: none;
+  color: #57a3e8;
+}
+
+.tagsidebar-text li {
+  list-style-type: none;
+}
+.docs-text {
+  border-radius: 3px;
+  border: 1px solid #ced7df;
+  padding: 10px 10px;
+}
+.docs-text p {
+  font-weight: 600;
+}
+.docs-text p:before {
+  position: relative;
+  top: 2px;
+  content: "⋆";
+  font-size: 3.5em;
+  line-height: 1em;
+  margin-right: 6px;
+  padding: 0;
+}
+.sidebar-divider {
+  padding: 25px 0;
+  margin: auto 20px;
+  content: "";
+  border-top: 1px solid #ced7df;
+}
+#blob {
+  padding-top: 10px;
+}
+
+
+.popular-docs {
+    padding: 0;
+
+    h3 {
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    mark {
+        padding: 0 4px;
+        color: #fff;
+        font-weight: normal;
+        background: #ffc336;
+    }
+
+    ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        position: relative;
+        display: block;
+        margin: 0 0 2px 0;
+        font-size: 1.4rem;
+        line-height: 1.4em;
+        background: lighten($lightgrey, 4%);
+
+        &:hover {
+            background: $lightgrey;
+            .number { background: darken($lightgrey, 4%); }
+        }
+
+        &:nth-child(3n) .number {
+            border-color: $grey;
+        }
+        &:nth-child(3n+2) .number {
+            border-color: $red;
+        }
+    }
+
+    a {
+        display: block;
+        min-height: 38px;
+        padding: 15px 15px 15px 75px;
+        color: rgba(0,0,0,0.7);
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .number {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 37px;
+        border-left: $blue 3px solid;
+        display: block;
+        padding: 10px;
+        color: rgba(0,0,0,0.2);
+        text-align: center;
+        font-weight: bold;
+        font-size: 2.8rem;
+        line-height: 1.5em;
+        background: $lightgrey;
+    }
+}
+
+
+/*
+.docs-divider {
+  list-style-type: none;
+    border-radius: 3px;
+    border: 1px solid #ced7df;
+    width: 100%;
+    padding: 10px 0;
+}
+*/
+
+
+/*
+.blog-content {
+    width: 63.26531%;
+    float: left;
+}
+
+.blog-sidebar {
+    width: 30.61224%;
+    float: right;
+
+    h1,h2,h3,
+    h4,h5,h6 {
+        margin-top: 0;
+    }
+
+    p {
+        font-size: 17px;
+        font-weight: 200;
+        line-height: 1.3em;
+        margin: 0 0 15px 0;
+    }
+}
+*/
+
+/* ==========================================================================
+   9. PAGE - Using page as single column, no sidebar
+   ========================================================================== */
+
+.page-wrap {
+    background: grey;
+}
+
+
+
+
 /* ==========================================================================
    Subscriber Banner - Top of Blog
    ========================================================================== */
@@ -1167,4 +1368,8 @@ pre[class*="language-"] {
 }
 @media (max-width: 500px) {
     .hero-image { height: 200px; }
+}
+
+#heightid {
+  padding-top: 10px;
 }
